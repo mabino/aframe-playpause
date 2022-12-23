@@ -25,11 +25,7 @@
 		
 	muteButton.addEventListener('click', function() {
 		const sound = this.components.sound;
-		if(sound.isPlaying){
-  			sound.stopSound();
-		} else {
-			sound.playSound();
-  		};
+		(sound.isPlaying ? sound.stopSound() : sound.playSound())
 	}); 
 </script>
 
